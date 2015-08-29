@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700italic,400italic,700,300italic,100italic,100,300,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="bruno.css">
+    <title></title>
+  </head>
+  <body>
+    <section class="nav-bar">
+      <h2 class="name-header">Ivan-Guillermo Baquerizo Friedman</h2>
+      <ul class="nav-list">
+        <li class="nav-list-item"><a class="nav-link" href="#webdev">Software Engineer</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="#emt">EMT</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="#math">Mathematician</a></li>
+        <li class="nav-list-item"><a class="nav-link" href="#contact">@ibf</a></li>
+      </ul>
+    </section>
+    <section class="banner-section">
+      <img class="banner" src="images/brunobanner.JPG"/>
+    </section>
+    <section id="web-dev" class="experience">
+    <a name="webdev"></a>
+      <!-- <h3>Software Engineer</h3> -->
+      <p>
+        Graduate of <a href="http://www.appacademy.io/">App Academy</a>, San Francisco<br>
+      </p>
+      <br>
+      <section class="skills">
+        <h3>Skills</h3>
+        <ul class="logo-list">
+          <div class="">
+            <img src="images/ruby.png"/><br>Ruby
+          </div>
+          <div class="">
+            <img src="images/rails.png"/><br>Rails
+          </div>
+          <div class="">
+            <img src="images/PostgreSQL.png"/><br>PostgreSQL
+          </div>
+          <br>
+          <div class="">
+            <img src="images/js.png"/><br>JavaScript
+          </div>
+          <div class="">
+            <img src="images/HTML5.png"/><br>HTML5
+          </div>
+          <div class="">
+            <img src="images/css3.png"/><br>CSS3
+          </div>
+          <br>
+          <div class="">
+            <img src="images/jquery.png"/><br>jQuery
+          </div>
+          <div class="">
+            <img src="images/git.png"/><br>git
+          </div>
+          <div class="">
+            <img src="images/R.png"/><br>R
+          </div>
+        </ul>
+        <br>
+        <h3>Projects</h3>
+        <div class="">
+          <a href="http://www.fridgeslam.xyz"><img src="images/white-slam-logo.png" /><br>Fridgeslam</a>
+        </div>
+        <div class="">
+          <a href="https://github.com/ifriedman08/RubyChess"><img src="images/chess.png" /><br>Ruby Chess</a>
+        </div>
+        <div class="">
+          <a href="http://ifriedman08.github.io/Dashteroids"><img src="images/ship.png"/><br>Dash-teroids</a>
+        </div>
+      </section>
+    </section>
+    <section id="emt" class="experience">
+      <a name="emt"></a>
+      <!-- <h3>Emergency Healthcare Provider</h3> -->
+      <p>
+        Emergency Department Technician<br>Highland General Hospital, <a href="http://www.highlandahs.org/">Alameda Health System</a>
+      </p>
+      <br>
+      <section class="skills">
+        <h3>
+          - General emergency medical care<br><br>- Client/patient rapport<br><br>- Phlebotomy<br><br>- CPR/AED/EKG administration<br><br>- Fast-paced and high-stakes decision-making
+        </h3>
+      </section>
+      </section>
+    </section>
+    <section id="math" class="experience">
+      <a name="math"></a>
+      <p>
+        B.A. in Mathematics from <a href="https://www.cornell.edu/">Cornell University</a>
+      </p>
+      <br>
+      <section class="skills">
+        <h3>
+          - Geometry<br><br>- Calculus<br><br>- Analysis<br><br>- Pre-Med<br><br>- Dean's List
+        </h3>
+      </section>
+    </section>
+    <section id="contact" class="experience">
+      <a name="contact"></a>
+      <!-- <h3>Emergency Healthcare Provider</h3> -->
+      <p>
+        Contact info:
+      </p>
+      <br>
+      <div class="email">
+        i.friedman.08@gmail.com<br>
+        <a href="mailto:i.friedman.08@gmail.com"><img src="images/email.png"/></a>
+      </div>
+      <div class="github">
+        github<br>
+        <a href="https://github.com/ifriedman08"><img src="images/github-icon.png"/></a>
+      </div>
+      <div class="linkedin">
+        linkedin<br>
+        <a href="https://www.linkedin.com/pub/ivan-friedman/99/88/811"><img src="images/linkedin.png"/></a>
+      </div>
+      <div class="resume">
+        Resumé<br>
+        <a href="IvanFriedmanCVWebDev.pdf" download><img src="images/resume.png"/></a>
+      </div>
+    </section>
+    <script type="text/javascript">
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 80
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

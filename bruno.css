@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+}
+
+body * {
+  font-family: 'Lato';
+  color: white;
+}
+
+section.nav-bar * {
+  color: white;
+  margin: 0;
+}
+
+section.nav-bar > h2 {
+  font-size: 35px;
+  transform: translateY(2px);
+  padding-top: 4px;
+  position: relative;
+}
+
+section.nav-bar {
+  padding-bottom: 6px;
+  clear: both;
+  z-index: 100;
+  width:100%;
+  min-height: 80px;
+  height: auto;
+  position: fixed;
+  text-align: center;
+  background-color: rgb(41, 41, 43);
+}
+
+ul.nav-list {
+  padding-top: 6px;
+  box-sizing: border-box;
+  transform: translateX(-1%);
+}
+
+ul.nav-list > li{
+  padding-top: 3px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+ul.nav-list {
+  list-style: none;
+}
+
+ul.nav-list a:hover {
+  margin: 0 9px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  background-color: rgb(77, 12, 12);
+}
+
+a.nav-link {
+  margin: 0 10px;
+  padding: 4px 8px;
+  font-size: 14px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+section.banner-section {
+  overflow: hidden;
+}
+
+img.banner {
+  top: 80px;
+  position: relative;
+  width: 100%;
+}
+
+.experience {
+  padding: 30px;
+}
+
+.experience p {
+  font-size: 30px;
+}
+
+#web-dev {
+  background-image: url('images/sanfrancisco.jpg');
+  text-align: center;
+}
+
+#emt {
+  background-image: url('images/highland.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+#math {
+  background-image: url('images/cornell.jpg');
+  background-position: center;
+  text-align: center;
+}
+
+#contact {
+  background: rgb(21, 22, 23);
+  text-align: center;
+}
+
+ul.logo-list {
+  position: static;
+  width: 300px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+ul.logo-list img{
+  margin: 5px;
+  height: auto;
+  width: 75px;
+}
+
+ul.logo-list div{
+  color: rgb(66, 68, 67);
+  display: inline-block;
+}
+
+.skills a {
+  text-decoration: none;
+}
+
+.skills > div:hover {
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.skills a > img {
+  margin: 5px;
+  height: 150px;
+  width: auto;
+}
+
+.skills > div {
+  box-sizing: border-box;
+  padding: 5px;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.aa-link {
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: white;
+  color: rgb(255, 0, 0);
+}
+
+.ahs-link {
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: white;
+  color: rgb(78, 51, 128);
+}
+
+#contact > div {
+  margin: 0 6%;
+  display: inline-block;
+}
+
+#contact img {
+  width: 75px;
+}
