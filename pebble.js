@@ -17,7 +17,7 @@ function locationSuccess(pos) {
   },
   function (response) {
     console.log('traff obj loaded');
-    console.log(JSON.stringify(response.rows[0]));    
+    console.log(JSON.stringify(response.rows[0].elements[0].duration.text));    
   });
 
 
