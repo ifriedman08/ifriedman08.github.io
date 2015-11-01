@@ -16,4 +16,4 @@ my_data = {};
   );
 
   console.log(JSON.stringify(my_data.currPos));
-  simply.body(JSON.stringify(my_data.currPos));
+  // simply.body(JSON.stringify(my_data.currPos));
