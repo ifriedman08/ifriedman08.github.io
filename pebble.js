@@ -10,12 +10,17 @@ function locationSuccess(pos) {
   console.log('Location Success');
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
 
-  load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
-        function(xhr) {
-          var response = JSON.parse(xhr.responseText);
-          console.log(response.rows.distance.text);
-        }
-      );
+  var imported = document.createElement('script');
+  imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
+  document.head.appendChild(imported);
+  console.log(imported.rows.distance.text);
+
+  // load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
+  //       function(xhr) {
+  //         var response = JSON.parse(xhr.responseText);
+  //         console.log(response.rows.distance.text);
+  //       }
+  //     );
     }
 
 
