@@ -9,7 +9,15 @@ var locationOptions = {
 function locationSuccess(pos) {
   console.log('Location Success');
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
-}
+
+  load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
+        function(xhr) {
+          var response = JSON.parse(xhr.responseText);
+          console.log(response.rows.distance.text);
+        }
+      );
+    }
+
 
 function locationError(err) {
   console.log('Location Error');
@@ -17,3 +25,6 @@ function locationError(err) {
 }
 
 navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+
+
+// AIzaSyDIjSpZjvx8LFJdvVNnO5GxVHQh5Zh-sZ4
