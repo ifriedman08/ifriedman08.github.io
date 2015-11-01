@@ -7,6 +7,8 @@ var locationOptions = {
   timeout: 10000
 };
 
+final_body = '';
+
 
 function locationSuccess(pos) {
   console.log('Location Success');
@@ -17,6 +19,8 @@ function locationSuccess(pos) {
   function (response) {
     console.log('work loc obj loaded');
     work_str = 'Work:' + response.rows[0].elements[0].duration.text;
+    final_body += 'Work: ' + work_str + '\n';
+    simply.body(final_body);
   });
 
   ajax({
@@ -26,6 +30,8 @@ function locationSuccess(pos) {
   function (response) {
     console.log('berk loc obj loaded');
     berk_str = 'Berkeley:' + response.rows[0].elements[0].duration.text;
+    final_body += 'Berkeley: ' + berk_str + '\n';
+    simply.body(final_body);
   });
 
   ajax({
@@ -35,11 +41,10 @@ function locationSuccess(pos) {
   function (response) {
     console.log('Oakland obj loaded');
     oak_str = 'Oakland:' + response.rows[0].elements[0].duration.text;
+    final_body += 'Oakland: ' + oak_str + '\n';
+    simply.body(final_body);
   });
 
-  simply.body('Work: ' + work_str + '\n'
-            + 'Berkeley: ' + berk_str + '\n'
-            + 'Oakland: ' + oak_str)
 }
 
 
