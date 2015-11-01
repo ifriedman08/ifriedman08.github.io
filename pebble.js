@@ -28,12 +28,5 @@ var locationOptions = {
 //
 // navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
 
-simply.text([
-  {
-    title: 'A1', subtitle: 'B1', body: 'C1'
-  },
-  {
-    title: 'A2', subtitle: 'B2', body: 'C2'
-  }
-
-])
+simply.text({ title: 'A1', subtitle: 'B1', body: 'C1'})
+simply.text({ title: 'A2', subtitle: 'B2', body: 'C2'})
