@@ -13,6 +13,7 @@ function locationSuccess(pos) {
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
   traff_to_work_obj= require('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose');
   console.log('traff obj loaded');
+  console.log(traff_to_work_obj.rows.distance.text);
 
 
   // var imported = document.createElement('script');
