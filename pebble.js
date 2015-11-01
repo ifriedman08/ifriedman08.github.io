@@ -14,5 +14,5 @@ navigator.geolocation.getCurrentPosition(function(position) {
       };
     }
 );
-
+console.log(JSON.stringify(pebble.currPos));
 simply.body(JSON.stringify(pebble.currPos));
