@@ -17,7 +17,7 @@ function locationSuccess(pos) {
   },
   function (response) {
     console.log('traff obj loaded');
-    simply.body(JSON.stringify(response.rows[0].elements[0].duration.text) + ' to get to work');
+    simply.body(response.rows[0].elements[0].duration.text + ' to get to work');
   });
 
 
