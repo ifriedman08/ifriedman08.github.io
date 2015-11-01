@@ -1,3 +1,5 @@
+simply.title('Simply:');
+
 var locationOptions = {
   enableHighAccuracy: true,
   maximumAge: 10000,
@@ -6,7 +8,7 @@ var locationOptions = {
 
 function locationSuccess(pos) {
   console.log('Location Success');
-  console.log('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
+  simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
 }
 
 function locationError(err) {
@@ -14,9 +16,4 @@ function locationError(err) {
   console.log('location error (' + err.code + '): ' + err.message);
 }
 
-Pebble.addEventListener('ready',
-  function(e) {
-    // Request current position
-    navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
-  }
-);
+navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
