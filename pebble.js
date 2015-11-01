@@ -1,4 +1,4 @@
-simply.title('Traffic estimates:');
+// simply.title('Travel time:');
 
 
 var locationOptions = {
@@ -8,39 +8,32 @@ var locationOptions = {
 };
 
 
-function locationSuccess(pos) {
-  console.log('Location Success');
-  // simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
-  ajax({
-    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
-    'type': 'json'
+// function locationSuccess(pos) {
+//   console.log('Location Success');
+//   ajax({
+//     'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
+//     'type': 'json'
+//   },
+//   function (response) {
+//     console.log('traff obj loaded');
+//     simply.body('Work:' + response.rows[0].elements[0].duration.text);
+//   });
+// }
+//
+//
+// function locationError(err) {
+//   console.log('Location Error');
+//   console.log('location error (' + err.code + '): ' + err.message);
+// }
+//
+// navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+
+simply.text([
+  {
+    title: 'A1', subtitle: 'B1', body: 'C1'
   },
-  function (response) {
-    console.log('traff obj loaded');
-    simply.body(response.rows[0].elements[0].duration.text + ' to get to work');
-  });
+  {
+    title: 'A2', subtitle: 'B2', body: 'C2'
+  }
 
-
-  // var imported = document.createElement('script');
-  // imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
-  // document.head.appendChild(imported);
-  // console.log(imported.rows.distance.text());
-
-  // load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
-  //       function(xhr) {
-  //         var response = JSON.parse(xhr.responseText);
-  //         console.log(response.rows.distance.text);
-  //       }
-  //     );
-    }
-
-
-function locationError(err) {
-  console.log('Location Error');
-  console.log('location error (' + err.code + '): ' + err.message);
-}
-
-navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
-
-
-// AIzaSyDIjSpZjvx8LFJdvVNnO5GxVHQh5Zh-sZ4
+])
