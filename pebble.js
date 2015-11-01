@@ -10,14 +10,14 @@ var locationOptions = {
 
 function locationSuccess(pos) {
   console.log('Location Success');
-  simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
+  // simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
   ajax({
     'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
     'type': 'json'
   },
   function (response) {
     console.log('traff obj loaded');
-    console.log(JSON.stringify(response.rows[0].elements[0].duration.text));    
+    simply.body(JSON.stringify(response.rows[0].elements[0].duration.text) + ' to get to work');
   });
 
 
