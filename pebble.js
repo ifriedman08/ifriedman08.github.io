@@ -1,3 +1,5 @@
+var pebble = {};
+
 console.log('running pebble.js');
 
 simply.title('Hello Nathalie!');
