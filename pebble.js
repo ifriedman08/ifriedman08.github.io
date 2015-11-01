@@ -1,4 +1,4 @@
-simply.title('Simply:');
+simply.title('Traffic estimates:');
 
 
 var locationOptions = {
