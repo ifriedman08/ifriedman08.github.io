@@ -11,13 +11,13 @@ var locationOptions = {
 function locationSuccess(pos) {
   console.log('Location Success');
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
-  traff_to_work_obj= ajax({
+  ajax({
     'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
     'type': 'json'
   },
-  function () {
+  function (response) {
     console.log('traff obj loaded');
-    console.log(traff_to_work_obj);    
+    console.log(response.rows);    
   });
 
 
