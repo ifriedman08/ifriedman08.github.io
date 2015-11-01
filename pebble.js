@@ -1,19 +1,22 @@
-my_data = {};
+var locationOptions = {
+  enableHighAccuracy: true,
+  maximumAge: 10000,
+  timeout: 10000
+};
 
-  console.log("running pebble.js");
+function locationSuccess(pos) {
+  console.log('Location Success');
+  console.log('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
+}
 
-  simply.title('Hello Nathalie!');
+function locationError(err) {
+  console.log('Location Error');
+  console.log('location error (' + err.code + '): ' + err.message);
+}
 
-  // var currPos = navigator.geolocation.getCurrentPosition();
-
-  // console.log(JSON.stringify(currPos));
-  navigator.geolocation.getCurrentPosition(function(position) {
-        my_data.currPos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-      }
-  );
-
-  console.log(JSON.stringify(my_data.currPos));
-  // simply.body(JSON.stringify(my_data.currPos));
+Pebble.addEventListener('ready',
+  function(e) {
+    // Request current position
+    navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
+  }
+);
