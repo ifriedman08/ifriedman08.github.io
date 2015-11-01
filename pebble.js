@@ -5,4 +5,4 @@ simply.body('Helwdcnlbbsdkhfbvkshdvbdfhk');
 
 var currPos = navigator.geolocation.getCurrentPosition();
 
-console.log(JSON.stringify(currPos));
+// console.log(JSON.stringify(currPos));
