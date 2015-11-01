@@ -19,7 +19,7 @@ function locationSuccess(pos) {
   function (response) {
     console.log('work loc obj loaded');
     work_str = 'Work:' + response.rows[0].elements[0].duration.text;
-    final_body += 'Work: ' + work_str + '\n';
+    final_body += work_str + '\n';
     simply.body(final_body);
   });
 
@@ -30,7 +30,7 @@ function locationSuccess(pos) {
   function (response) {
     console.log('berk loc obj loaded');
     berk_str = 'Berkeley:' + response.rows[0].elements[0].duration.text;
-    final_body += 'Berkeley: ' + berk_str + '\n';
+    final_body += berk_str + '\n';
     simply.body(final_body);
   });
 
@@ -41,7 +41,7 @@ function locationSuccess(pos) {
   function (response) {
     console.log('Oakland obj loaded');
     oak_str = 'Oakland:' + response.rows[0].elements[0].duration.text;
-    final_body += 'Oakland: ' + oak_str + '\n';
+    final_body += oak_str + '\n';
     simply.body(final_body);
   });
 
