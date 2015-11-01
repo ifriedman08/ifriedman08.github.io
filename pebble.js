@@ -1,5 +1,7 @@
 simply.title('Simply:');
 
+var traff_to_work_obj= require('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose');
+
 var locationOptions = {
   enableHighAccuracy: true,
   maximumAge: 10000,
@@ -10,28 +12,8 @@ var locationOptions = {
 function locationSuccess(pos) {
   console.log('Location Success');
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
-
-  response = ajax({
-    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
-    'type': 'json'
-  }
-);
-
-  console.log(response);
-
-
-  // var imported = document.createElement('script');
-  // imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
-  // document.head.appendChild(imported);
-  // console.log(imported.rows.distance.text());
-
-  // load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
-  //       function(xhr) {
-  //         var response = JSON.parse(xhr.responseText);
-  //         console.log(response.rows.distance.text);
-  //       }
-  //     );
-    }
+  console.log(JSON.stringify(traff_to_work_obj));
+}
 
 
 function locationError(err) {
