@@ -6,14 +6,27 @@ var locationOptions = {
   timeout: 10000
 };
 
+
 function locationSuccess(pos) {
   console.log('Location Success');
   simply.body('lat= ' + pos.coords.latitude + ' lon= ' + pos.coords.longitude);
 
-  var imported = document.createElement('script');
-  imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
-  document.head.appendChild(imported);
-  console.log(imported.rows.distance.text());
+  success_callback = function (response) {
+    console.log(JSON.stringify(response));
+  };
+
+  ajax({
+    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
+    'type': 'json'
+   },
+     success_callback(response),
+     err_callback);
+
+
+  // var imported = document.createElement('script');
+  // imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
+  // document.head.appendChild(imported);
+  // console.log(imported.rows.distance.text());
 
   // load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
   //       function(xhr) {
