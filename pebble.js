@@ -1,4 +1,4 @@
-this.pebble = {};
+pebble = {};
 
 console.log('running pebble.js');
 
