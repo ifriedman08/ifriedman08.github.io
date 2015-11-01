@@ -6,11 +6,11 @@ simply.title('Hello Nathalie!');
 
 // console.log(JSON.stringify(currPos));
 navigator.geolocation.getCurrentPosition(function(position) {
-      currPos = {
+      pebble.currPos = {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
     }
 );
 
-simply.body(console.log(JSON.stringify(currPos)));
+simply.body(console.log(JSON.stringify(pebble.currPos)));
