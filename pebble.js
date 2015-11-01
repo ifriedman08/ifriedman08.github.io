@@ -11,5 +11,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-
+    }
+);
 console.log();
