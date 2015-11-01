@@ -13,7 +13,7 @@ function locationSuccess(pos) {
   var imported = document.createElement('script');
   imported.src = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose';
   document.head.appendChild(imported);
-  console.log(imported.rows.distance.text);
+  console.log(imported.rows.distance.text());
 
   // load('https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
   //       function(xhr) {
