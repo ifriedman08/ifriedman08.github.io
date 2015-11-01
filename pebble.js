@@ -14,11 +14,10 @@ function locationSuccess(pos) {
   response = ajax({
     'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=San+Jose',
     'type': 'json'
-  },
-    function() {
-      console.log(response);
-    }
+  }
 );
+
+  console.log(response);
 
 
   // var imported = document.createElement('script');
