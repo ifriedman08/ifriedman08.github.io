@@ -66,8 +66,8 @@ function locationSuccess(pos) {
 
   function (response) {
     load_count += 1;
-    oak_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
-    final_body += oak_str + '\n';
+    napa_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
+    final_body += napa_str + '\n';
     simply.body(final_body);
     if (load_count == 4) {
       simply.vibe();
