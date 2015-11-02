@@ -76,7 +76,6 @@ function locationSuccess(pos) {
 
 }
 
-
 function locationError(err) {
   console.log('Location Error');
   console.log('location error (' + err.code + '): ' + err.message);
