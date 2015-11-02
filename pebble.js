@@ -23,8 +23,8 @@ function locationSuccess(pos) {
     load_count += 1;
     work_str = 'Work: ' + response.rows[0].elements[0].duration.text;
     final_body += work_str + '\n';
-    simply.body(final_body);
     if (load_count == 4) {
+      simply.body(final_body);
       simply.vibe();
     };
   });
@@ -38,8 +38,8 @@ function locationSuccess(pos) {
     load_count += 1;
     berk_str = 'Berkeley: ' + response.rows[0].elements[0].duration.text;
     final_body += berk_str + '\n';
-    simply.body(final_body);
     if (load_count == 4) {
+      simply.body(final_body);
       simply.vibe();
     };
   });
@@ -53,26 +53,26 @@ function locationSuccess(pos) {
     load_count += 1;
     oak_str = 'Oakland: ' + response.rows[0].elements[0].duration.text;
     final_body += oak_str + '\n';
-    simply.body(final_body);
     if (load_count == 4) {
+      simply.body(final_body);
       simply.vibe();
     };
   });
 
-  // ajax({
-  //   'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=38.2486896,-122.3286388',
-  //   'type': 'json'
-  // },
-  //
-  // function (response) {
-  //   load_count += 1;
-  //   napa_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
-  //   final_body += napa_str + '\n';
-  //   simply.body(final_body);
-  //   if (load_count == 4) {
-  //     simply.vibe();
-  //   };
-  // });
+  ajax({
+    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=38.2486896,-122.3286388',
+    'type': 'json'
+  },
+
+  function (response) {
+    load_count += 1;
+    napa_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
+    final_body += napa_str + '\n';
+    if (load_count == 4) {
+      simply.body(final_body);
+      simply.vibe();
+    };
+  });
 
 }
 
