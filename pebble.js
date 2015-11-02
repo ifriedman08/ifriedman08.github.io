@@ -2,7 +2,7 @@ simply.title('Travel time:');
 
 load_count = 0;
 
-simply.body('Loading...')
+// simply.body('Loading...')
 
 var locationOptions = {
   enableHighAccuracy: true,
