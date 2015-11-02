@@ -59,20 +59,20 @@ function locationSuccess(pos) {
     };
   });
 
-  ajax({
-    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=38.2486896,-122.3286388',
-    'type': 'json'
-  },
-
-  function (response) {
-    load_count += 1;
-    napa_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
-    final_body += napa_str + '\n';
-    simply.body(final_body);
-    if (load_count == 4) {
-      simply.vibe();
-    };
-  });
+  // ajax({
+  //   'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=38.2486896,-122.3286388',
+  //   'type': 'json'
+  // },
+  //
+  // function (response) {
+  //   load_count += 1;
+  //   napa_str = 'Napa: ' + response.rows[0].elements[0].duration.text;
+  //   final_body += napa_str + '\n';
+  //   simply.body(final_body);
+  //   if (load_count == 4) {
+  //     simply.vibe();
+  //   };
+  // });
 
 }
 
