@@ -25,7 +25,7 @@ function locationSuccess(pos) {
     final_body += work_str + '\n';
     simply.body(final_body);
     if (load_count == 3) {
-      simple.vibe();
+      simply.vibe();
     };
   });
 
@@ -40,7 +40,7 @@ function locationSuccess(pos) {
     final_body += berk_str + '\n';
     simply.body(final_body);
     if (load_count == 3) {
-      simple.vibe();
+      simply.vibe();
     };
   });
 
@@ -55,7 +55,7 @@ function locationSuccess(pos) {
     final_body += oak_str + '\n';
     simply.body(final_body);
     if (load_count == 3) {
-      simple.vibe();
+      simply.vibe();
     };
   });
 
