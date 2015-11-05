@@ -21,7 +21,7 @@ function locationSuccess(pos) {
 
   function (response) {
     load_count += 1;
-    work_str = 'Work: ' + response.rows[0].elements[0].duration.text;
+    work_str = 'Work: ' + response.rows[0].elements[0].duration_in_traffic.text;
     final_body += work_str + '\n';
     if (load_count == 4) {
       simply.body(final_body);
