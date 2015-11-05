@@ -21,7 +21,7 @@ ajax({
 
   function (response) {
     load_count += 1;
-    console.log(response.getElementsByTagName('currentTravelTime');
+    console.log(response.getElementsByTagName('currentTravelTime'));
     debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
     // final_body += work_str + '\n';
