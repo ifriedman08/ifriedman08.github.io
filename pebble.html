@@ -7,26 +7,9 @@
   </head>
   <body>
     <script type="text/javascript">
-    $.ajax({
-      url: 'http://services.my511.org/traffic/getpathlist.aspx?token=1cdcd300-ceb0-4439-9ce7-0e75e6d63ef7&o=1530&d=653',
-      crossDomain: false,
-      headers: {
-        'Access-Control-Allow-Origin': 'ivanfriedman.co'
-      }
-    },
-
-    function (response) {
-      load_count += 1;
-      console.log('slice');
-      console.log(response);
-      // debugger;
-      // work_str = 'Work: ' + response.rows[0].elements[0].text;
-      // final_body += work_str + '\n';
-      if (load_count == 4) {
-        simply.body(final_body);
-        simply.vibe();
-      };
-    })
+    var request = new XMLHttpRequest();
+    request.open("GET", "http://services.my511.org/traffic/getpathlist.aspx?token=1cdcd300-ceb0-4439-9ce7-0e75e6d63ef7&o=1530&d=653", false);
+    request.send();
     </script>
   </body>
 </html>
