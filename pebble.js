@@ -21,8 +21,8 @@ ajax({
 
   function (response) {
     load_count += 1;
-    console.log('type of';
-    console.log(typeof(response);
+    console.log('type of');
+    console.log(typeof(response));
     // debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
     // final_body += work_str + '\n';
