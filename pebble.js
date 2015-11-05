@@ -24,7 +24,7 @@ ajax({
     console.log('get success');
     debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
-    final_body += work_str + '\n';
+    // final_body += work_str + '\n';
     if (load_count == 4) {
       simply.body(final_body);
       simply.vibe();
