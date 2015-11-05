@@ -16,8 +16,8 @@ ajax({
 
   function (response) {
     load_count += 1;
-    console.log('straight response');
-    console.log($(response).find('currentTravelTime'));
+    console.log('jQ');
+    console.log(jQuery(response).find('currentTravelTime'));
     // debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
     // final_body += work_str + '\n';
