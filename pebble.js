@@ -15,13 +15,14 @@ final_body = '';
 function locationSuccess(pos) {
   console.log('Location Success');
   ajax({
-    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=37.412517,-121.937146&durationInTraffic=true',
+    'url': 'https://maps.googleapis.com/maps/api/directions/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=37.412517,-121.937146',
     'type': 'json'
   },
 
   function (response) {
     load_count += 1;
-    work_str = 'Work: ' + response.rows[0].elements[0].duration_in_traffic.text;
+    console.log(JSON.stringify(response));
+    // work_str = 'Work: ' + response.rows[0].elements[0].text;
     final_body += work_str + '\n';
     if (load_count == 4) {
       simply.body(final_body);
