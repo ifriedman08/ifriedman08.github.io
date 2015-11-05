@@ -14,7 +14,7 @@ ajax({
   function (response) {
     load_count += 1;
     console.log('slice');
-    console.log(response.slice(0, 23));
+    console.log(response);
     // debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
     // final_body += work_str + '\n';
