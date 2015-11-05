@@ -15,7 +15,7 @@ final_body = '';
 function locationSuccess(pos) {
   console.log('Location Success');
   ajax({
-    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=37.412517,-121.937146',
+    'url': 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=' + pos.coords.latitude + ',' + pos.coords.longitude + '&destinations=37.412517,-121.937146&durationInTraffic=true',
     'type': 'json'
   },
 
