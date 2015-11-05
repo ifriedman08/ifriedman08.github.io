@@ -3,7 +3,7 @@ simply.title('Travel time:');
 load_count = 0;
 
 // simply.body('Loading...')
-require('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+require('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js')
 
 final_body = '';
 
@@ -16,7 +16,7 @@ ajax({
 
   function (response) {
     load_count += 1;
-    console.log('jQ');
+    console.log('jQ.js');
     console.log(jQuery(response).find('currentTravelTime'));
     // debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
