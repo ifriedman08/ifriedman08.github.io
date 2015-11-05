@@ -3,7 +3,7 @@ simply.title('Travel time:');
 load_count = 0;
 
 // simply.body('Loading...')
-require('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js')
+require('jq.js')
 
 final_body = '';
 
