@@ -2,9 +2,6 @@ simply.title('Travel time:');
 
 load_count = 0;
 
-// simply.body('Loading...')
-require('jq.js')
-
 final_body = '';
 
 
