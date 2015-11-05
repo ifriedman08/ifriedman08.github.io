@@ -21,9 +21,9 @@ ajax({
 
   function (response) {
     load_count += 1;
-    console.log('time[0]');
-    console.log(response.getElementsByTagName('currentTravelTime')[0]);
-    debugger;
+    console.log('type of';
+    console.log(typeof(response);
+    // debugger;
     // work_str = 'Work: ' + response.rows[0].elements[0].text;
     // final_body += work_str + '\n';
     if (load_count == 4) {
