@@ -103,6 +103,10 @@ img.banner {
   padding-bottom: 3%;
 }
 
+#Cisco {
+  background-image: url('images/cisco_background.jpg');
+}
+
 ul.logo-list {
   position: static;
   width: 300px;
@@ -165,6 +169,12 @@ ul.logo-list div{
 #contact > div {
   margin: 0 6%;
   display: inline-block;
+}
+
+.cisco_logo{
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
 }
 
 #contact img {
