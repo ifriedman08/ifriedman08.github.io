@@ -105,6 +105,8 @@ img.banner {
 
 #Cisco {
   background-image: url('images/cisco_background.jpg');
+  background-size: 100%;
+  background-position: center;
 }
 
 ul.logo-list {
