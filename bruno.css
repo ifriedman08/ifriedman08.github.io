@@ -35,6 +35,7 @@ ul.nav-list {
   padding-top: 6px;
   box-sizing: border-box;
   transform: translateX(-1%);
+  padding-left: 1em;
 }
 
 ul.nav-list > li{
