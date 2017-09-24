@@ -83,6 +83,7 @@ img.banner {
   background-image: url('images/sanfrancisco.jpg');
   text-align: center;
   background-size: cover;
+  background-position: center;
 }
 
 #emt {
