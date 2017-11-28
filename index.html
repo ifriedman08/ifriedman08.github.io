@@ -2,144 +2,220 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Ivan Friedman - Software Engineer</title>
     <link rel="shortcut icon" href="images/Bruno8bitbust.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700italic,400italic,700,300italic,100italic,100,300,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="bruno.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ivan Friedman</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" sync></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.1/js/tether.min.js" charset="utf-8" sync></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous" sync></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
-  <body>
-    <section class="nav-bar">
-      <h2 class="name-header">Ivan-Guillermo Baquerizo Friedman</h2>
-      <ul class="nav-list">
-        <li class="nav-list-item"><a class="nav-link" href="#top">Back to top</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#webdev">Software Engineer</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#math">Mathematician</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#emt">EMT</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#Cisco">Cisco</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#contact">@ibf</a></li>
+  <body id="page-top">
+    <!-- Nav bar -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse static-top">
+      <button class="navbar-toggler navbar-toggler-right btn-lg btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="images/Bruno8bitbust.png" style="border-radius:50%" width="30" height="30" class="d-inline-block align-top" alt="">
+        Ivan Friedman
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#bio-section">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education-section">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience-section">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner Image -->
+    <div id="banner-section">
+      <img src="images/brunobanner.jpg" width="100%" alt="">
+    </div>
+
+    <!-- Bio section -->
+    <section id="bio-section">
+      <h2>Bio</h2>
+      <br>
+      <p>Hi there! My name is Ivan Friedman. I am a native of Berkeley, CA.</p>
+      <p>After graduating from university, I returned to the Bay Area and worked as an EMT. Then I attended a coding bootcamp in San Francisco and learned about web development and software engineering.</p>
+      <p>I have since been working as a contractor fontend developer for Cisco Systems.</p>
+      <p>I am natively fluent in both French and Spanish.</p>
+      <hr class="my-4">
+      <p>My interests include:</p>
+      <ul>
+        <li>Full stack engineering</li>
+        <li>Big data</li>
+        <li>Gaming</li>
+        <li>Automation</li>
+      </ul>
+      <p>Contact me <a href="#contact-section">here</a>.</p>
+    </section>
+
+    <!-- Education section -->
+    <section id="education-section">
+      <a href="#page-top" class="btn btn-secondary btn-sm active float-right" role="button" aria-pressed="true">Back to top</a>
+      <h2>Education</h2>
+      <ul id="schools">
+        <li>B.A. in Mathematics from <a href="https://www.math.cornell.edu/m/">Cornell University</a> (2012)</li>
+        <li>Post-Bac Health Science Certificate from <a href="https://extension.berkeley.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=17177&selectedProgramAreaId=15498&selectedProgramStreamId=15597">UC Berkeley Extension</a> (2014)</li>
+        <li>Software Engineering training from <a href="https://www.appacademy.io/">App Academy</a>, San Francisco (2015)</li>
       </ul>
     </section>
-    <section id="top" class="banner-section">
-      <img class="banner" src="images/brunobanner.jpg"/>
-    </section>
-    <section class="bio">
-      <p>
-        Software engineer with background in mathematics and emergency medical care.<br>
-        Fluent in English, Spanish, and French.
-      </p>
-    </section>
-    <section id="web-dev" class="experience">
-    <a name="webdev"></a>
-      <p>
-        Graduate of <a href="http://www.appacademy.io/">App Academy</a>, San Francisco<br>
-      </p>
+
+    <!-- skills section -->
+    <section id="skills-section">
+      <a href="#page-top" class="btn btn-secondary btn-sm active float-right" role="button" aria-pressed="true">Back to top</a>
+      <h2>Skills</h2>
       <br>
-      <section class="skills">
-        <h3>Skills</h3>
-        <ul class="logo-list">
-          <div class="">
-            <img src="images/ruby.png"/><br>Ruby
-          </div>
-          <div class="">
-            <img src="images/rails.png"/><br>Rails
-          </div>
-          <div class="">
-            <img src="images/PostgreSQL.png"/><br>PostgreSQL
-          </div>
-          <br>
-          <div class="">
-            <img src="images/js.png"/><br>JavaScript
-          </div>
-          <div class="">
-            <img src="images/HTML5.png"/><br>HTML5
-          </div>
-          <div class="">
-            <img src="images/css3.png"/><br>CSS3
-          </div>
-          <br>
-          <div class="">
-            <img src="images/jquery.png"/><br>jQuery
-          </div>
-          <div class="">
-            <img src="images/git.png"/><br>git
-          </div>
-          <div class="">
-            <img src="images/R.png"/><br>R
-          </div>
-        </ul>
-        <br>
-        <h3>Projects</h3>
-        <div class="">
-          <a href="http://www.fridgeslam.xyz"><img src="images/white-slam-logo.png" /><br>Fridgeslam</a>
+      <div class="logo-list">
+        <li class="skill-item row list-group-item col-sm-5">
+          Adobe Experience Manager<img src="images/aem.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Adobe Target<img src="images/target.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Backbone<img src="images/backbone.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Bootstrap<img src="images/bootstrap.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          CSS3<img src="images/css3.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          git<img src="images/git.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          HTML5<img src="images/HTML5.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          JavaScript<img src="images/js.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          jQuery<img src="images/jquery.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Node<img src="images/node.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          NPM<img src="images/npm.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          PostgreSQL<img src="images/PostgreSQL.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          R<img src="images/R.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Rails<img src="images/rails.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          React<img src="images/react.png">
+        </li>
+        <li class="skill-item row list-group-item col-sm-5">
+          Ruby<img src="images/ruby.png">
+        </li>
+      </div>
+    </section>
+
+    <!-- experience section -->
+    <section id="experience-section">
+      <a href="#page-top" class="btn btn-secondary btn-sm active float-right" role="button" aria-pressed="true">Back to top</a>
+      <h2>Experience</h2>
+      <br>
+      <div class="container">
+        <div id="accordion" class="accordion">
+            <div class="card m-b-0">
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#highland">
+                    <a class="card-title">
+                        EMT at Highland Hospital
+                    </a>
+                </div>
+                <div id="highland" class="card-block collapse">
+                    <ul>
+                      <li>Phlebotomy</li>
+                      <li>Triage</li>
+                      <li>Splinting</li>
+                      <li>CPR</li>
+                      <li>EKG</li>
+                      <li>Multilingual translation</li>
+                      <li>Vitals and history documentation</li>
+                    </ul>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#cisco">
+                    <a class="card-title">
+                      Software Developer for Cisco Systems
+                    </a>
+                </div>
+                <div id="cisco" class="card-block collapse">
+                    <i>Contactor through Experis Manpower</i>
+                    <br>
+                    <br>
+                    <ul>
+                      <li><b>Component Management:</b> Integration of Asynchronous Modular Definition into our component framework</li>
+                      <li><b>Personalization:</b> Architacture and development of a plugin library to integrate Adobe Marketing Cloud (Target) into our framework</li>
+                      <br>
+                      <li>Debugging and testing</li>
+                      <li>Story-writing</li>
+                      <li>Scrum, Kanban and Agile methodologies</li>
+                      <li>In charge of Git workflow</li>
+                    </ul>
+                </div>
+                <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#codeClass">
+                    <a class="card-title">
+                      After-school Coding Teacher
+                    </a>
+                </div>
+                <div id="codeClass" class="panel-collapse collapse">
+                    <ul>
+                      <li>Curriculum development</li>
+                      <li>Grades 2 through 5</li>
+                      <li>Fundamental data-structures</li>
+                      <li>Basic algebra concepts</li>
+                      <li><b>Ruby</b></li>
+                      <li><b>JavaScript</b></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="">
-          <a href="https://github.com/ifriedman08/RubyChess"><img src="images/chess.png" /><br>Ruby Chess</a>
-        </div>
-        <div class="">
-          <a href="http://ifriedman08.github.io/Dashteroids"><img src="images/ship.png"/><br>Dash-teroids</a>
-        </div>
-      </section>
+    </div>
     </section>
-    <section id="math" class="experience">
-      <a name="math"></a>
-      <p>
-        B.A. in Mathematics from <a href="https://www.cornell.edu/">Cornell University</a>
-      </p>
+
+    <!-- contact section -->
+    <section id="contact-section">
+      <a href="#page-top" class="btn btn-secondary btn-sm active float-right" role="button" aria-pressed="true">Back to top</a>
+      <h2>Contact</h2>
       <br>
-      <section class="skills">
-        <h3>
-          - Geometry<br><br>- Calculus<br><br>- Analysis<br><br>- Pre-Med<br><br>- Dean's List
-        </h3>
-      </section>
-    </section>
-    <section id="emt" class="experience">
-      <a name="emt"></a>
-      <!-- <h3>Emergency Healthcare Provider</h3> -->
-      <p>
-        Emergency Department Technician<br>Highland General Hospital, <a href="http://www.highlandahs.org/">Alameda Health System</a>
-      </p>
-      <br>
-      <section class="skills">
-        <h3>
-          - General emergency medical care<br><br>- Client/patient rapport<br><br>- Phlebotomy<br><br>- CPR/AED/EKG administration<br><br>- Fast-paced and high-stakes decision-making
-        </h3>
-      </section>
-    </section>
-    <section id="Cisco" class="experience" style="padding:0">
-      <a name="Cisco"></a>
-      <img class="cisco_logo" src="images/Cisco_logo.svg" alt="" />
-    </section>
-    <section id="contact" class="experience">
-      <a name="contact"></a>
-      <!-- <h3>Emergency Healthcare Provider</h3> -->
-      <p>
-        Contact info:
-      </p>
-      <br>
-      <div class="email">
-        i.friedman.08@gmail.com<br>
-        <a href="mailto:i.friedman.08@gmail.com"><img src="images/email.png"/></a>
+      <div class="contact-links">
+        <a class="col-3" href="mailto:i.friedman.08@gmail.com"><img src="images/email.png"></a>
+        <a class="col-3" href="https://github.com/ifriedman08"><img src="images/github-icon.png"></a>
+        <a class="col-3" href="https://www.linkedin.com/pub/ivan-friedman/99/88/811"><img src="images/linkedin.png"></a>
+        <a class="col-3" href="IvanFriedmanCV-LL.pdf" download=""><img src="images/resume.png"></a>
       </div>
-      <div class="github">
-        github<br>
-        <a href="https://github.com/ifriedman08"><img src="images/github-icon.png"/></a>
-      </div>
-      <div class="linkedin">
-        linkedin<br>
-        <a href="https://www.linkedin.com/pub/ivan-friedman/99/88/811"><img src="images/linkedin.png"/></a>
-      </div>
-      <div class="resume">
-        Resumé<br>
-        <a href="IvanFriedmanCV-LL.pdf" download><img src="images/resume.png"/></a>
-      </div>
+      <br><br>
     </section>
-    <script type="text/javascript">
+
+  </body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script type="text/javascript">
     $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
+      $('a[href*=\\#]:not([href=\\#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -152,6 +228,5 @@
         }
       });
     });
-    </script>
-  </body>
+  </script>
 </html>

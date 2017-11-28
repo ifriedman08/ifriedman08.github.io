@@ -1,0 +1,57 @@
+section:nth-child(even) {
+  padding: 3em;
+  background-color: #e6e5e5;
+}
+
+section:nth-child(odd) {
+  padding: 3em;
+  background-color: #2a2b2c;
+  color: white;
+}
+
+section:nth-child(odd) a {
+  color: #00e0c4
+}
+
+section#banner-section > h2 {
+  position: absolute;
+}
+
+ul#schools{
+  margin-top: 2em;
+}
+
+ul#schools > li{
+  margin-bottom: 1em
+}
+
+div.logo-list li {
+  margin: 0 auto;
+  color: black;
+}
+
+div.logo-list img {
+  width: 2.5em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+hr {
+  border-top: 1px solid lightgrey !important;
+}
+
+section#contact-section img{
+  width: 20%;
+  max-width: 4em;
+}
+
+section#contact-section a {
+  padding: 0
+}
+
+div.contact-links {
+  width: 100%;
+  text-align: center;
+}
